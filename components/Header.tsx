@@ -12,14 +12,14 @@ const NAV: { href: string; label: string; page: Page }[] = [
 export default function Header({ city, active }: { city: City; active: Page }) {
   return (
     <header className="border-b border-zinc-200 bg-white">
-      <div className="mx-auto flex max-w-3xl items-start justify-between px-6 py-8">
+      <div className="mx-auto flex max-w-3xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h1 className="font-heading text-3xl font-semibold tracking-tight text-zinc-900">
             {city.name} climate tracker
           </h1>
           <p className="mt-1 text-zinc-600">{city.tagline}</p>
         </div>
-        <nav className="mt-1 flex items-start gap-4 text-sm font-medium">
+        <nav className="flex items-start gap-4 text-sm font-medium sm:mt-1">
           {NAV.map((item) => {
             const isActive = item.page === active;
             return (
