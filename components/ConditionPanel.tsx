@@ -1,12 +1,13 @@
 import type { ReactNode } from "react";
 import type { Level, Panel } from "@/lib/conditions";
 
-export const LEVEL_CLASSES: Record<Level, string> = {
-  good: "bg-level-good-bg text-level-good-text border-level-good-border",
-  moderate: "bg-level-moderate-bg text-level-moderate-text border-level-moderate-border",
-  high: "bg-level-high-bg text-level-high-text border-level-high-border",
-  extreme: "bg-level-extreme-bg text-level-extreme-text border-level-extreme-border",
-  unknown: "bg-level-unknown-bg text-level-unknown-text border-level-unknown-border",
+/** Fill + text for the small status pill only — the card itself stays neutral. */
+export const LEVEL_PILL_CLASSES: Record<Level, string> = {
+  good: "bg-level-good-bg text-level-good-text",
+  moderate: "bg-level-moderate-bg text-level-moderate-text",
+  high: "bg-level-high-bg text-level-high-text",
+  extreme: "bg-level-extreme-bg text-level-extreme-text",
+  unknown: "bg-level-unknown-bg text-level-unknown-text",
 };
 
 const ICONS: Record<Panel["key"], ReactNode> = {
@@ -43,20 +44,24 @@ export function formatTime(iso: string | null): string {
 
 export default function ConditionPanel({ panel }: { panel: Panel }) {
   return (
-    <div className={`rounded-2xl border p-6 shadow-sm ${LEVEL_CLASSES[panel.level]}`}>
+    <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
       <div className="flex items-center justify-between">
-        <p className="text-sm font-semibold uppercase tracking-wide opacity-80">{panel.label}</p>
-        <span aria-hidden="true" className="opacity-70">
+        <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500">{panel.label}</p>
+        <span aria-hidden="true" className="text-zinc-400">
           {ICONS[panel.key]}
         </span>
       </div>
-      <p className="mt-2 text-4xl font-semibold tabular-nums">
+      <p className="mt-2 text-4xl font-semibold tabular-nums text-zinc-900">
         {panel.value}
-        <span className="ml-1 text-lg font-normal opacity-80">{panel.unit}</span>
+        <span className="ml-1 text-lg font-normal text-zinc-500">{panel.unit}</span>
       </p>
-      <p className="mt-3 text-base font-semibold">{panel.headline}</p>
-      <p className="mt-1 text-sm opacity-80">{panel.detail}</p>
-      <p className="mt-4 text-xs opacity-70">{formatTime(panel.observedAt)}</p>
+      <span
+        className={`mt-3 inline-block rounded-full px-3 py-1 text-sm font-semibold ${LEVEL_PILL_CLASSES[panel.level]}`}
+      >
+        {panel.headline}
+      </span>
+      <p className="mt-3 text-sm text-zinc-600">{panel.detail}</p>
+      <p className="mt-4 text-xs text-zinc-400">{formatTime(panel.observedAt)}</p>
     </div>
   );
 }
