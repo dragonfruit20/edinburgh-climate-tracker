@@ -1,0 +1,551 @@
+[
+  {
+    "id": "edinburgh-heat-1",
+    "city": "Edinburgh",
+    "category": "heat",
+    "title": "Free water refill taps across the city",
+    "summary": "Scottish Water's Top Up Tap map shows free public water refill points across Scotland, including Edinburgh, so you can top up a bottle on a hot day instead of buying one.",
+    "details": [
+      "Find your nearest tap using the online Top Up Tap map",
+      "Over 70 taps across Scotland including cities, parks and beaches",
+      "Bring your own refillable bottle - no charge",
+      "Part of Scottish Water's Your Water Your Life campaign"
+    ],
+    "when": [
+      "any",
+      "heat-high"
+    ],
+    "sources": [
+      {
+        "title": "Scottish Water: Top Up Tap Map",
+        "url": "https://www.scottishwater.co.uk/your-home/campaigns/top-up-tap-map"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-heat-2",
+    "city": "Edinburgh",
+    "category": "heat",
+    "title": "Council advice on staying cool and safe in hot weather",
+    "summary": "Edinburgh Council's hot weather page gives practical steps for staying cool and checking on vulnerable neighbours during heat, and links to Met Office and NHS guidance.",
+    "details": [
+      "Avoid the hottest part of the day, 11am to 3pm",
+      "Close curtains and windows during the day, open them at night to cool the home",
+      "Carry water and wear a hat and sunscreen outdoors",
+      "Check on older or vulnerable neighbours and relatives",
+      "Links through to Met Office forecasts and NHS hot weather advice"
+    ],
+    "when": [
+      "heat-high",
+      "heat-extreme"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: Keeping cool in hot weather",
+        "url": "https://www.edinburgh.gov.uk/severe-weather/keeping-cool-hot-weather"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-heat-3",
+    "city": "Edinburgh",
+    "category": "heat",
+    "title": "Suggest a spot for a new street tree",
+    "summary": "Edinburgh's One Million Tree City programme aims to plant around 250,000 trees by 2030 for shade and cooling. Residents can suggest planting locations or record trees they've already planted, though the scheme doesn't hand out free trees to individuals.",
+    "details": [
+      "Aims for roughly 250,000 new trees by 2030 as part of the city's net zero target",
+      "Submit a tree-planting suggestion through the council's online form",
+      "Report a tree you've already planted so it counts towards the total",
+      "Contact edinburghmilliontrees@edinburgh.gov.uk with questions"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: One million tree city",
+        "url": "https://www.edinburgh.gov.uk/one-million-tree-city"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-air-quality-1",
+    "city": "Edinburgh",
+    "category": "air quality",
+    "title": "Check today's air quality before you go out",
+    "summary": "The Scottish Air Quality database gives near real-time pollution readings from monitoring stations across Scotland, including Edinburgh, via an interactive map.",
+    "details": [
+      "Interactive map shows readings from monitoring sites across Scotland",
+      "Filter by pollutant, e.g. nitrogen dioxide, PM2.5, PM10",
+      "Data updates near real-time, with a last-updated time shown on the site",
+      "Free to use, no login needed"
+    ],
+    "when": [
+      "air-moderate",
+      "air-high"
+    ],
+    "sources": [
+      {
+        "title": "Scottish Air Quality: monitoring network",
+        "url": "https://www.scottishairquality.scot/"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-air-quality-2",
+    "city": "Edinburgh",
+    "category": "air quality",
+    "title": "Sign up for air pollution email alerts",
+    "summary": "Free email bulletins from the Scottish Air Quality Database can flag Edinburgh readings, forecasts, or alerts when pollution is high, so you can plan around bad air days.",
+    "details": [
+      "Choose the 'City of Edinburgh' region when registering",
+      "Pick measurements, forecasts, alerts, or a combination",
+      "Set the frequency: daily, hourly, or only when pollution is high",
+      "Free, and you can unsubscribe any time by email"
+    ],
+    "when": [
+      "any",
+      "air-high"
+    ],
+    "sources": [
+      {
+        "title": "Scottish Air Quality: Email bulletin registration",
+        "url": "https://www.scottishairquality.scot/stay-informed/registration"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-air-quality-3",
+    "city": "Edinburgh",
+    "category": "air quality",
+    "title": "Low Emission Zone in the city centre",
+    "summary": "Edinburgh's Low Emission Zone covers the city centre and restricts the most polluting vehicles to help cut traffic pollution; fines apply to non-compliant vehicles.",
+    "details": [
+      "Covers roughly 1.2 square miles of the city centre, enforced 24/7 by cameras",
+      "Petrol vehicles need Euro 4 or above; diesel needs Euro 6 or above",
+      "Zero-emission and electric vehicles always comply",
+      "Penalty charge notices have been issued since 1 June 2024",
+      "Check your vehicle using the free LEZ Scotland registration checker"
+    ],
+    "when": [
+      "any",
+      "air-high"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: Low Emission Zone",
+        "url": "https://www.edinburgh.gov.uk/low-emission-zone/developing-lez/5"
+      },
+      {
+        "title": "mygov.scot: Low Emission Zones",
+        "url": "https://www.mygov.scot/low-emission-zones"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-energy-1",
+    "city": "Edinburgh",
+    "category": "energy at home",
+    "title": "Home Energy Scotland grant and loan for insulation and heating",
+    "summary": "Scottish Government grants, plus an optional interest-free loan, help homeowners pay for insulation, heat pumps and other clean heating upgrades.",
+    "details": [
+      "Heat pumps and heat networks: up to £7,500 grant plus up to £7,500 loan",
+      "Solid wall insulation: up to £7,500 grant plus up to £2,500 loan",
+      "Loft, cavity or underfloor insulation: up to £1,500 grant plus up to £500 loan",
+      "Extra £1,500 available in remote, rural or off-gas areas",
+      "First-come, first-served - funding is not unlimited"
+    ],
+    "when": [
+      "any",
+      "cold-extreme"
+    ],
+    "sources": [
+      {
+        "title": "Home Energy Scotland: Grant and Loan",
+        "url": "https://www.homeenergyscotland.org/home-energy-scotland-grant-loan"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-energy-2",
+    "city": "Edinburgh",
+    "category": "energy at home",
+    "title": "Free insulation and heating through Warmer Homes Scotland",
+    "summary": "Warmer Homes Scotland can fully fund insulation, draught-proofing and heating upgrades worth £10,000 or more for eligible homeowners and private tenants on low incomes or with health needs.",
+    "details": [
+      "For homeowners or private tenants living in the home as their main residence for 6+ months",
+      "Household must include someone 75+, someone with a qualifying medical condition, or someone on a passport benefit such as Universal Credit",
+      "Covers wall and loft insulation, draught-proofing, central heating and renewables",
+      "The Scottish Government meets most or all of the cost",
+      "Call 0808 808 2282 or use the online eligibility checker"
+    ],
+    "when": [
+      "any",
+      "cold-extreme"
+    ],
+    "sources": [
+      {
+        "title": "Home Energy Scotland: Warmer Homes Scotland",
+        "url": "https://www.homeenergyscotland.org/warmer-homes-scotland"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-energy-3",
+    "city": "Edinburgh",
+    "category": "energy at home",
+    "title": "Free, impartial energy advice and a funding finder",
+    "summary": "Home Energy Scotland's advisors give free, impartial phone advice on cutting energy bills and can point you to whichever grant, loan or scheme actually fits your home.",
+    "details": [
+      "Freephone advice line: 0808 808 2282",
+      "Online funding finder tool checks which schemes you might qualify for",
+      "Covers the Home Energy Scotland Grant and Loan, Warmer Homes Scotland, landlord loans and the Warm Home Discount",
+      "Free for homeowners, landlords and tenants"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "Home Energy Scotland: Find funding",
+        "url": "https://www.homeenergyscotland.org/find-funding"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-water-flooding-1",
+    "city": "Edinburgh",
+    "category": "water and flooding",
+    "title": "Sign up for free flood warnings from Floodline",
+    "summary": "SEPA's Floodline service sends free flood warnings and alerts by email for your postcode, covering Edinburgh's rivers including the Water of Leith.",
+    "details": [
+      "Register online with your email and postcode at myfloodline.sepa.org.uk",
+      "Get targeted 'Flood Warning' messages for your immediate area or wider 'Flood Alert' messages for the region",
+      "Free service - no account needed just to check current warnings",
+      "No email? Call Floodline on 0345 988 1188, option 2 for Scotland then option 3 for an advisor"
+    ],
+    "when": [
+      "any",
+      "rain-heavy",
+      "flood-risk"
+    ],
+    "sources": [
+      {
+        "title": "SEPA: Sign up to Floodline",
+        "url": "https://myfloodline.sepa.org.uk/register"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-water-flooding-2",
+    "city": "Edinburgh",
+    "category": "water and flooding",
+    "title": "What to do and who to call during a flood",
+    "summary": "Edinburgh Council's flood page tells residents to shut off power and water at the mains, avoid contact with floodwater, and gives a number to call to report flooding.",
+    "details": [
+      "Report flooding to the council on 0131 200 2000",
+      "Switch off electricity at the fuse box and water at the mains if flooding starts",
+      "Floodwater can be contaminated - keep children and pets away from it",
+      "Check on elderly or vulnerable neighbours",
+      "Sign up to SEPA's flood warnings and monitor local radio and council social media during alerts"
+    ],
+    "when": [
+      "rain-heavy",
+      "flood-risk"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: What to do in a flood",
+        "url": "https://www.edinburgh.gov.uk/flooding/flood"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-water-flooding-3",
+    "city": "Edinburgh",
+    "category": "water and flooding",
+    "title": "Report a blocked or overflowing sewer",
+    "summary": "Scottish Water runs a free 24/7 line for reporting flooding from blocked or overflowing sewers and drains.",
+    "details": [
+      "Freephone 24/7 reporting line: 0800 0778778",
+      "Use this for flooding caused by sewers or drains rather than surface water or rivers",
+      "Confirmed directly on Scottish Water's own sewer flooding page"
+    ],
+    "when": [
+      "rain-heavy",
+      "flood-risk"
+    ],
+    "sources": [
+      {
+        "title": "Scottish Water: Sewer flooding",
+        "url": "https://www.scottishwater.co.uk/your-home/your-waste-water/sewer-flooding"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-transport-1",
+    "city": "Edinburgh",
+    "category": "getting around",
+    "title": "Hire an e-bike with Voi",
+    "summary": "Voi runs Edinburgh's e-bike hire scheme - dockless bikes you unlock and pay for through the Voi app, good for short trips instead of driving. This replaced the old docked Just Eat Cycles scheme, which shut down in 2020.",
+    "details": [
+      "Pay-as-you-go: £0.49 to unlock, then £0.11 a minute",
+      "Day and monthly passes work out cheaper per ride for frequent riders - check the app for current prices",
+      "Dockless - park at any safe street location rather than a fixed station",
+      "Unlock and pay through the Voi app; riders must be 18 or over",
+      "Launched across Edinburgh in September 2025"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: Cycle hire scheme",
+        "url": "https://www.edinburgh.gov.uk/cycling-walking/cycle-hire-scheme/2"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-transport-2",
+    "city": "Edinburgh",
+    "category": "getting around",
+    "title": "Lothian Buses and tram fares",
+    "summary": "Lothian Buses and Edinburgh Trams run the city's public transport network, with single tickets, day tickets and the Ridacard for regular travel.",
+    "details": [
+      "Bus adult single: £2.40; child single: £1.20 (fares from 22 February 2026)",
+      "Bus City DAY ticket: £6.00 adult, £3.00 child",
+      "Tram adult single £2.40, tram adult DAYticket £6.00",
+      "Contactless accepted with automatic daily and weekly capping; on trams you must tap on and tap off",
+      "Ridacard season tickets give the lowest fares for regular travel"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "Lothian Buses: Fares revision",
+        "url": "https://www.lothianbuses.com/news/2026/01/fares-revision/"
+      },
+      {
+        "title": "Edinburgh Trams: Changes to tram fares in 2026",
+        "url": "https://edinburghtrams.com/news/changes-tram-fares-2026"
+      },
+      {
+        "title": "Lothian Buses: Contactless",
+        "url": "https://www.lothianbuses.com/contactless/"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-transport-3",
+    "city": "Edinburgh",
+    "category": "getting around",
+    "title": "Find an EV charging point",
+    "summary": "The council runs a network of on-street and hub EV charge points across Edinburgh, from standard 7kW to rapid 50kW chargers. In 2026 the network moved to WattStop (provided by Fuuse), so older apps and cards may no longer work.",
+    "details": [
+      "Three speeds available: 7kW standard, 22kW fast, 50kW rapid",
+      "Pay with the WattStop app, contactless, a QR code, or a roaming card (Octopus Electroverse, ZapMap, Allstar, PAUA)",
+      "Find locations via ZapMap; some individual chargers are listed as out of service",
+      "22kW charging bays have an 8-hour time limit",
+      "Billing queries: electricvehicles.billing@edinburgh.gov.uk"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: Find EV charging points",
+        "url": "https://www.edinburgh.gov.uk/electric-vehicles-ev/find-electric-vehicle-charging-points-edinburgh/2"
+      },
+      {
+        "title": "City of Edinburgh Council: Electric vehicles (network changes)",
+        "url": "https://www.edinburgh.gov.uk/electricvehicles"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-waste-1",
+    "city": "Edinburgh",
+    "category": "waste and reuse",
+    "title": "Free weekly food waste collection",
+    "summary": "Nearly every household in Edinburgh gets a weekly food waste collection, at the kerbside for houses or through communal bins for flats, with free caddies to line with any bag you like.",
+    "details": [
+      "Weekly collection for almost all households, kerbside or communal bin",
+      "Kitchen caddies and kerbside food bins are ordered free of charge",
+      "Line with a compostable liner, plain plastic bag, bread bag, or paper - whatever works",
+      "Find your exact collection day by searching your street on the council site"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: Food waste prevention and recycling",
+        "url": "https://www.edinburgh.gov.uk/bins-recycling/ood-waste-prevention-recycling"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-waste-2",
+    "city": "Edinburgh",
+    "category": "waste and reuse",
+    "title": "Book a bulky waste (special uplift) collection",
+    "summary": "Edinburgh Council will collect up to five bulky household items from the kerbside for a small charge, waived for those on Council Tax Reduction.",
+    "details": [
+      "£5 charge per item, up to 5 items per booking",
+      "Free if you receive Council Tax Reduction - use the exemption form with your CTR reference",
+      "Put items out by 7am on the day of collection",
+      "Items must be liftable by two people and no longer than 7 feet",
+      "Book online; the booking system has maintenance downtime on Sundays 4am-11am"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: Book a bulky waste collection",
+        "url": "https://www.edinburgh.gov.uk/bulkywaste"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-waste-3",
+    "city": "Edinburgh",
+    "category": "waste and reuse",
+    "title": "Household waste recycling centres",
+    "summary": "Edinburgh has three recycling centres for bulky items, garden waste and more - Seafield, Craigmillar and Sighthill - most vehicle visits need a booked slot.",
+    "details": [
+      "Seafield HWRC, 76 Seafield Road, EH6 7LW",
+      "Craigmillar HWRC, Old Dalkeith Road, EH16 4TB (pedestrian access currently suspended for safety)",
+      "Sighthill HWRC, Bankhead Avenue, EH11 4EA",
+      "Open 7 days a week for booked slots; no booking needed on foot or by bike with small amounts",
+      "Van and trailer visits need a half-hour slot at 11am, 12:30pm or 2:30pm"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "City of Edinburgh Council: Household waste recycling centres",
+        "url": "https://www.edinburgh.gov.uk/bins-recycling/household-waste-recycling-centres"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "edinburgh-waste-4",
+    "city": "Edinburgh",
+    "category": "waste and reuse",
+    "title": "Fix broken items at the Remakery repair cafe",
+    "summary": "The Edinburgh Remakery runs a weekly pay-what-you-can repair cafe in Leith for clothing, textiles and some electronics, extending the life of things you'd otherwise bin.",
+    "details": [
+      "Every Friday, 11am-1pm, at 13A Newkirkgate Shopping Centre, Leith",
+      "Repairs clothing, zips, hems and alterations",
+      "Also fixes laptops, desktops, monitors and games consoles (not general electrical goods or software issues)",
+      "Pay-what-you-can, drop-in, no booking needed"
+    ],
+    "when": [
+      "any"
+    ],
+    "sources": [
+      {
+        "title": "The Edinburgh Remakery: Repair Cafe",
+        "url": "https://www.edinburghremakery.org.uk/repair-cafe/"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-09-27",
+      "method": "schema+spot+freshness"
+    }
+  }
+]
