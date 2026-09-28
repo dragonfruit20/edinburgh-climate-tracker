@@ -2,6 +2,7 @@ import cityData from "@/data/city.json";
 import { actionIssues, flaggedActions, verifiedActions } from "@/lib/actions";
 import type { City } from "@/lib/types";
 import Header from "@/components/Header";
+import { LEVEL_PILL_CLASSES } from "@/components/ConditionPanel";
 
 const city = cityData as City;
 
@@ -53,15 +54,15 @@ export default function HowItsChecked() {
     <div className="flex min-h-full flex-col">
       <Header city={city} active="how-its-checked" />
       <main className="mx-auto w-full max-w-3xl flex-1 px-6 py-10">
-        <h2 className="font-heading text-2xl font-semibold text-zinc-900">How it&apos;s checked</h2>
-        <p className="mt-2 text-sm text-zinc-600">
+        <h2 className="font-heading text-2xl font-semibold text-foreground">How it&apos;s checked</h2>
+        <p className="mt-2 text-sm text-secondary">
           Every local action shown on this site was researched by AI, then checked against three
           rules before it went live. Nothing here is checked by AI at the moment you visit — the
           checks happen once, when the action is added.
         </p>
 
         <section className="mt-8">
-          <h3 className="text-base font-semibold text-zinc-900">Results</h3>
+          <h3 className="text-base font-semibold text-foreground">Results</h3>
           <div className="mt-3 grid grid-cols-2 gap-4 sm:grid-cols-3">
             <Stat label="Passed all checks" value={verifiedActions.length} tone="good" />
             <Stat label="Flagged" value={flaggedActions.length} tone="high" />
@@ -77,22 +78,22 @@ export default function HowItsChecked() {
         </section>
 
         <section className="mt-8">
-          <h3 className="text-base font-semibold text-zinc-900">The three checks</h3>
+          <h3 className="text-base font-semibold text-foreground">The three checks</h3>
           <div className="mt-3 space-y-3">
             {CHECKS.map((c) => (
-              <div key={c.name} className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
-                <p className="font-medium text-zinc-900">{c.name}</p>
-                <p className="mt-1 text-sm text-zinc-600">{c.description}</p>
+              <div key={c.name} className="rounded-xl border border-surface-border bg-surface p-4 shadow-sm">
+                <p className="font-medium text-foreground">{c.name}</p>
+                <p className="mt-1 text-sm text-secondary">{c.description}</p>
               </div>
             ))}
           </div>
         </section>
 
         <section className="mt-8">
-          <h3 className="text-base font-semibold text-zinc-900">Where the live data comes from</h3>
-          <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 shadow-sm">
+          <h3 className="text-base font-semibold text-foreground">Where the live data comes from</h3>
+          <div className="mt-3 overflow-hidden rounded-xl border border-surface-border shadow-sm">
             <table className="w-full text-left text-sm">
-              <thead className="bg-zinc-50 text-zinc-500">
+              <thead className="bg-surface text-muted">
                 <tr>
                   <th className="px-4 py-2 font-medium">Panel</th>
                   <th className="px-4 py-2 font-medium">Source</th>
@@ -101,16 +102,16 @@ export default function HowItsChecked() {
               </thead>
               <tbody>
                 {FEEDS.map((f) => (
-                  <tr key={f.panel} className="border-t border-zinc-200">
-                    <td className="px-4 py-2 font-medium text-zinc-900">{f.panel}</td>
-                    <td className="px-4 py-2 text-zinc-700">{f.source}</td>
-                    <td className="px-4 py-2 text-zinc-600">{f.detail}</td>
+                  <tr key={f.panel} className="border-t border-surface-border">
+                    <td className="px-4 py-2 font-medium text-foreground">{f.panel}</td>
+                    <td className="px-4 py-2 text-secondary">{f.source}</td>
+                    <td className="px-4 py-2 text-secondary">{f.detail}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="mt-2 text-xs text-zinc-500">
+          <p className="mt-2 text-xs text-muted">
             All four are free and need no sign-up. Readings are cached on the server (an hour for
             weather and air, six hours for the river signal, thirty minutes for carbon emissions)
             so the site stays fast.
@@ -118,8 +119,8 @@ export default function HowItsChecked() {
         </section>
 
         <section className="mt-8">
-          <h3 className="text-base font-semibold text-zinc-900">Flagged entries</h3>
-          <p className="mt-2 text-sm text-zinc-600">
+          <h3 className="text-base font-semibold text-foreground">Flagged entries</h3>
+          <p className="mt-2 text-sm text-secondary">
             These didn&apos;t pass every check, so they&apos;re listed here for transparency —
             never shown as advice on the main page.
           </p>
@@ -127,13 +128,13 @@ export default function HowItsChecked() {
             {flaggedActions.map((a) => (
               <div key={a.id} className="rounded-xl border border-level-high-border bg-level-high-bg p-4 shadow-sm">
                 <p className="font-medium text-level-high-text">{a.title}</p>
-                <p className="mt-1 text-sm text-zinc-700">{a.summary}</p>
+                <p className="mt-1 text-sm text-secondary">{a.summary}</p>
                 <p className="mt-2 text-sm font-medium text-level-high-text">Why it was flagged:</p>
-                <p className="text-sm text-zinc-700">{a.verification.flag_reason}</p>
+                <p className="text-sm text-secondary">{a.verification.flag_reason}</p>
               </div>
             ))}
             {flaggedActions.length === 0 && (
-              <p className="text-sm text-zinc-500">Nothing is currently flagged.</p>
+              <p className="text-sm text-muted">Nothing is currently flagged.</p>
             )}
           </div>
         </section>
@@ -143,15 +144,14 @@ export default function HowItsChecked() {
 }
 
 function Stat({ label, value, tone }: { label: string; value: number; tone: "good" | "high" | "unknown" }) {
-  const classes = {
-    good: "bg-level-good-bg text-level-good-text border-level-good-border",
-    high: "bg-level-high-bg text-level-high-text border-level-high-border",
-    unknown: "bg-level-unknown-bg text-level-unknown-text border-level-unknown-border",
-  }[tone];
   return (
-    <div className={`rounded-xl border p-4 shadow-sm ${classes}`}>
-      <p className="text-2xl font-semibold">{value}</p>
-      <p className="text-xs">{label}</p>
+    <div className="rounded-xl border border-surface-border bg-surface p-4 shadow-sm">
+      <p className="text-2xl font-semibold text-foreground">{value}</p>
+      <span
+        className={`mt-2 inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold ${LEVEL_PILL_CLASSES[tone]}`}
+      >
+        {label}
+      </span>
     </div>
   );
 }

@@ -36,9 +36,9 @@ export default async function Home() {
         </div>
 
         <section className="mt-12">
-          <h2 className="font-heading text-2xl font-semibold text-zinc-900">What to do today</h2>
+          <h2 className="font-heading text-2xl font-semibold text-foreground">What to do today</h2>
           {today.length === 0 ? (
-            <p className="mt-2 text-sm text-zinc-600">
+            <p className="mt-2 text-sm text-secondary">
               Nothing urgent right now — conditions are calm. Browse everything on the{" "}
               <a href="/actions" className="text-brand-strong underline hover:text-brand">
                 All actions

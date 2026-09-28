@@ -26,13 +26,13 @@ export default function ActionBrowser({
 
   return (
     <div>
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-3">
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search actions..."
-          className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm sm:max-w-xs"
+          className="w-full rounded-lg border border-surface-border bg-surface px-3 py-2 text-sm text-foreground placeholder:text-muted"
         />
         <div className="flex flex-wrap gap-2">
           {["All", ...categories].map((c) => (
@@ -40,10 +40,10 @@ export default function ActionBrowser({
               key={c}
               onClick={() => setCategory(c)}
               aria-pressed={category === c}
-              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${
+              className={`rounded-full px-3 py-1 text-sm font-semibold capitalize transition-colors ${
                 category === c
                   ? "bg-brand text-white"
-                  : "bg-brand/10 text-brand-strong hover:bg-brand/20"
+                  : "bg-brand-bg text-brand-strong hover:bg-brand-bg-hover"
               }`}
             >
               {c}
@@ -52,7 +52,7 @@ export default function ActionBrowser({
         </div>
       </div>
 
-      <p className="mt-3 text-xs text-zinc-500">
+      <p className="mt-3 text-xs text-muted">
         {filtered.length} of {actions.length} actions
       </p>
 
@@ -61,7 +61,7 @@ export default function ActionBrowser({
           <ActionCard key={action.id} action={action} />
         ))}
         {filtered.length === 0 && (
-          <p className="col-span-full text-sm text-zinc-500">No actions match that search.</p>
+          <p className="col-span-full text-sm text-muted">No actions match that search.</p>
         )}
       </div>
     </div>

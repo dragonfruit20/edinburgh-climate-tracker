@@ -1,43 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdfbf6;
-  --background-accent: #f0fdfa;
-  --foreground: #1c1917;
+  color-scheme: dark;
 
-  /* Brand: used for links, active states, focus rings. */
-  --brand: #0f766e;
-  --brand-strong: #115e59;
+  /* Page background: almost black, cool blue undertone rather than green. */
+  --background: #06090c;
+  --foreground: #eef4f6;
 
-  /* Condition levels: same meaning everywhere on the site. Bg/border use
-     a richer 100/300 tint than a typical pale dashboard; text stays at an
-     800 depth so contrast against the tint comfortably clears WCAG AA. */
-  --level-good-bg: #d1fae5;
-  --level-good-text: #065f46;
-  --level-good-border: #6ee7b7;
+  /* Cards sit one step lighter than the page, same cool-blue family,
+     with a still-lighter border so they read clearly as raised surfaces
+     on an otherwise near-black page. */
+  --surface: #0d1a1e;
+  --surface-border: #1f373d;
 
-  --level-moderate-bg: #fef3c7;
-  --level-moderate-text: #92400e;
-  --level-moderate-border: #fcd34d;
+  /* Secondary = summaries/details (readable, not full-strength).
+     Muted = labels, units, timestamps, icons (present but quiet). */
+  --secondary: #a5c0c7;
+  --muted: #74929a;
 
-  --level-high-bg: #ffedd5;
-  --level-high-text: #9a3412;
-  --level-high-border: #fdba74;
+  /* Brand: --brand is dark/saturated enough for white text on a solid
+     fill; --brand-strong is for text and accents that sit directly on
+     the dark page/card background — bright enough to read clearly, but
+     stopping short of a pastel/neon tone, which bloomed and looked
+     blurry against near-black. --brand-bg/-bg-hover are solid (not
+     translucent) fills for chips: a translucent wash barely showed up
+     against the page, so chip text looked like it had no container. */
+  --brand: #0d9488;
+  --brand-strong: #2dd4bf;
+  --brand-bg: #12332f;
+  --brand-bg-hover: #184540;
 
-  --level-extreme-bg: #fee2e2;
-  --level-extreme-text: #991b1b;
-  --level-extreme-border: #fca5a5;
+  /* Condition levels: a real traffic-light set (green/amber/orange/red),
+     tuned to stay vivid and clearly distinct from each other and from
+     the teal brand colour against the near-black background. */
+  --level-good-bg: #0f3324;
+  --level-good-text: #4ade80;
+  --level-good-border: #1c5138;
 
-  --level-unknown-bg: #f4f4f5;
-  --level-unknown-text: #52525b;
-  --level-unknown-border: #d4d4d8;
+  --level-moderate-bg: #3a2a08;
+  --level-moderate-text: #fbbf24;
+  --level-moderate-border: #57420f;
+
+  --level-high-bg: #3a2109;
+  --level-high-text: #fb923c;
+  --level-high-border: #573510;
+
+  --level-extreme-bg: #3a1212;
+  --level-extreme-text: #f87171;
+  --level-extreme-border: #571d1d;
+
+  --level-unknown-bg: #14252a;
+  --level-unknown-text: #9bb4bc;
+  --level-unknown-border: #263d43;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-border: var(--surface-border);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
   --color-brand: var(--brand);
   --color-brand-strong: var(--brand-strong);
+  --color-brand-bg: var(--brand-bg);
+  --color-brand-bg-hover: var(--brand-bg-hover);
   --color-level-good-bg: var(--level-good-bg);
   --color-level-good-text: var(--level-good-text);
   --color-level-good-border: var(--level-good-border);
@@ -53,21 +80,21 @@
   --color-level-unknown-bg: var(--level-unknown-bg);
   --color-level-unknown-text: var(--level-unknown-text);
   --color-level-unknown-border: var(--level-unknown-border);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-dm-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-poppins);
 }
 
 body {
-  background: linear-gradient(180deg, var(--background-accent) 0%, var(--background) 320px);
+  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
 /* Keyboard focus must always be visible, on every interactive element,
    not just the ones we remembered to style individually. */
 :focus-visible {
-  outline: 2px solid var(--brand);
+  outline: 2px solid var(--brand-strong);
   outline-offset: 2px;
   border-radius: 2px;
 }
