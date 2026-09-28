@@ -11,15 +11,15 @@ const NAV: { href: string; label: string; page: Page }[] = [
 
 export default function Header({ city, active }: { city: City; active: Page }) {
   return (
-    <header className="border-b border-zinc-200 bg-white">
+    <header className="border-b border-surface-border bg-surface">
       <div className="mx-auto flex max-w-3xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <h1 className="font-heading text-3xl font-semibold tracking-tight text-zinc-900">
+        <div className="min-w-0">
+          <h1 className="font-heading text-[2.4375rem] leading-tight font-semibold tracking-tight text-foreground">
             {city.name} climate tracker
           </h1>
-          <p className="mt-1 text-zinc-600">{city.tagline}</p>
+          <p className="mt-1 text-secondary">{city.tagline}</p>
         </div>
-        <nav className="flex items-start gap-4 text-sm font-medium sm:mt-1">
+        <nav className="flex shrink-0 items-start gap-4 text-sm font-medium sm:mt-1">
           {NAV.map((item) => {
             const isActive = item.page === active;
             return (
@@ -29,8 +29,8 @@ export default function Header({ city, active }: { city: City; active: Page }) {
                 aria-current={isActive ? "page" : undefined}
                 className={
                   isActive
-                    ? "border-b-2 border-brand text-brand-strong"
-                    : "border-b-2 border-transparent text-zinc-600 hover:text-brand-strong"
+                    ? "whitespace-nowrap text-brand-strong underline decoration-2 underline-offset-4"
+                    : "whitespace-nowrap text-secondary hover:text-brand-strong"
                 }
               >
                 {item.label}

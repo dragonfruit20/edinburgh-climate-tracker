@@ -13,8 +13,8 @@ export default function AllActions() {
     <div className="flex min-h-full flex-col">
       <Header city={city} active="actions" />
       <main className="mx-auto w-full max-w-3xl flex-1 px-6 py-10">
-        <h2 className="font-heading text-2xl font-semibold text-zinc-900">All actions</h2>
-        <p className="mt-2 text-sm text-zinc-600">
+        <h2 className="font-heading text-2xl font-semibold text-foreground">All actions</h2>
+        <p className="mt-2 text-sm text-secondary">
           Every verified local climate action for {city.name}, searchable and filterable by
           category.
         </p>

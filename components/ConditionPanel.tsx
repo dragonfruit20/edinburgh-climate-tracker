@@ -44,24 +44,24 @@ export function formatTime(iso: string | null): string {
 
 export default function ConditionPanel({ panel }: { panel: Panel }) {
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+    <div className="rounded-2xl border border-surface-border bg-surface p-6 shadow-sm">
       <div className="flex items-center justify-between">
-        <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500">{panel.label}</p>
-        <span aria-hidden="true" className="text-zinc-400">
+        <p className="text-sm font-semibold uppercase tracking-wide text-muted">{panel.label}</p>
+        <span aria-hidden="true" className="text-muted">
           {ICONS[panel.key]}
         </span>
       </div>
-      <p className="mt-2 text-4xl font-semibold tabular-nums text-zinc-900">
+      <p className="mt-2 text-4xl font-semibold tabular-nums text-foreground">
         {panel.value}
-        <span className="ml-1 text-lg font-normal text-zinc-500">{panel.unit}</span>
+        <span className="ml-1 text-lg font-normal text-muted">{panel.unit}</span>
       </p>
       <span
         className={`mt-3 inline-block rounded-full px-3 py-1 text-sm font-semibold ${LEVEL_PILL_CLASSES[panel.level]}`}
       >
         {panel.headline}
       </span>
-      <p className="mt-3 text-sm text-zinc-600">{panel.detail}</p>
-      <p className="mt-4 text-xs text-zinc-400">{formatTime(panel.observedAt)}</p>
+      <p className="mt-3 text-sm text-secondary">{panel.detail}</p>
+      <p className="mt-4 text-xs text-muted">{formatTime(panel.observedAt)}</p>
     </div>
   );
 }
